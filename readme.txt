@@ -6,3 +6,4 @@ Git is free software distributed under the GPL.
 Git has a mutable index called stage.
 connet github
 123456798
+Creating a new branch is quick AND simple
