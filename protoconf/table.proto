@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package aladinfun.TripleDream.proto;
+
+message EnumItem {
+    string Name = 1;
+    uint32 Value = 2;
+}
+
+message EnumConfig {
+    string EnumTypeName = 1;
+    repeated EnumItem EnumItemAry = 2;
+}
+
+message EnumConfigAry {
+    repeated EnumConfig ary = 1;
+}
+
+message TestConfig {
+    string Name = 1;
+    EnumItem Type = 2;
+}
+
+message TestConfigAry {
+    repeated TestConfig ary = 1;
+}
+
+enum PRIZE_TYPE {
+    PRIZE_TYPE_INIT    = 0;
+    PRIZE_TYPE_DIAMOND = 1;
+    PRIZE_TYPE_GOLD    = 2;
+    PRIZE_TYPE_PROP    = 3;
+    PRIZE_TYPE_STEP    = 4;
+}
