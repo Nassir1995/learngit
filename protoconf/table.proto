@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package aladinfun.develop.proto;
+package aladinfun.develp.proto;
 
 message EnumItem {
     string Name = 1;
