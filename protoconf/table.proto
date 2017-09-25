@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package aladinfun.test.proto;
+package aladinfun.develop.proto;
 
 message EnumItem {
     string Name = 1;
@@ -14,15 +14,6 @@ message EnumConfig {
 
 message EnumConfigAry {
     repeated EnumConfig ary = 1;
-}
-
-message TestConfig {
-    string Name = 1;
-    EnumItem Type = 2;
-}
-
-message TestConfigAry {
-    repeated TestConfig ary = 1;
 }
 
 enum PRIZE_TYPE {
