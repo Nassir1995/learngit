@@ -54,3 +54,15 @@ message DemoConfigAry {
     repeated DemoConfig ary = 1;
 }
 
+message Demo1Config {
+    uint32 A = 1;
+    repeated uint32 B = 2;
+    IntArr C = 3;
+    PriceEnum D = 4;
+    Common E = 5;
+}
+
+message Demo1ConfigAry {
+    repeated Demo1Config ary = 1;
+}
+
