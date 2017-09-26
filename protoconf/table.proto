@@ -42,7 +42,7 @@ message Common {
     PersonEnum PersonType = 1;
 }
 
-message DemoConfig {
+message TestConfig {
     uint32 A = 1;
     repeated uint32 B = 2;
     IntArr C = 3;
@@ -50,11 +50,11 @@ message DemoConfig {
     Common E = 5;
 }
 
-message DemoConfigAry {
+message TestConfigAry {
     repeated DemoConfig ary = 1;
 }
 
-message Demo1Config {
+message Test1Config {
     uint32 A = 1;
     repeated uint32 B = 2;
     IntArr C = 3;
@@ -62,7 +62,7 @@ message Demo1Config {
     Common E = 5;
 }
 
-message Demo1ConfigAry {
+message Test1ConfigAry {
     repeated Demo1Config ary = 1;
 }
 
