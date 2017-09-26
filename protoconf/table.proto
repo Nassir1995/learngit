@@ -51,7 +51,7 @@ message TestConfig {
 }
 
 message TestConfigAry {
-    repeated DemoConfig ary = 1;
+    repeated TestConfig ary = 1;
 }
 
 message Test1Config {
@@ -63,6 +63,6 @@ message Test1Config {
 }
 
 message Test1ConfigAry {
-    repeated Demo1Config ary = 1;
+    repeated Test1Config ary = 1;
 }
 
