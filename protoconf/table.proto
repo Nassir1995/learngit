@@ -16,19 +16,53 @@ message EnumConfigAry {
     repeated EnumConfig ary = 1;
 }
 
-message TestConfig {
-    string Name = 1;
-    EnumItem Type = 2;
+// 奖励类型
+enum PriceEnum {
+    // [奖励类型]无
+    PriceDefault = 0;
+
+    // [奖励类型]钻石
+    PriceDiamond = 1;
 }
 
-message TestConfigAry {
-    repeated TestConfig ary = 1;
+// 个人类型
+enum PersonEnum {
+    // [个人类型]无
+    PersonDefault = 0;
+
+    // [个人类型]钻石
+    PersonDiamond = 1;
 }
 
-enum PRIZE_TYPE {
-    PRIZE_TYPE_INIT    = 0;
-    PRIZE_TYPE_DIAMOND = 1;
-    PRIZE_TYPE_GOLD    = 2;
-    PRIZE_TYPE_PROP    = 3;
-    PRIZE_TYPE_STEP    = 4;
+message IntArr {
+    repeated uint32 List = 1;
 }
+
+message Common {
+    PersonEnum PersonType = 1;
+}
+
+message DemoConfig {
+    uint32 A = 1;
+    repeated uint32 B = 2;
+    IntArr C = 3;
+    PriceEnum D = 4;
+    Common E = 5;
+}
+
+message DemoConfigAry {
+    repeated DemoConfig ary = 1;
+}
+
+message Demo1Config {
+    uint32 A = 1;
+    repeated uint32 B = 2;
+    IntArr C = 3;
+    PriceEnum D = 4;
+    Common E = 5;
+}
+
+message Demo1ConfigAry {
+    repeated Demo1Config ary = 1;
+}
+
